@@ -34,15 +34,15 @@ local function platform(agent)
     elseif (string.find(agent, "iOS")) then
         return "iOS"
     elseif (string.find(agent, "Windows") or string.find(agent, "Krampus") or string.find(identifyexecutor(), "Wave") or
-            string.find(identifyexecutor(), "Swift") or string.find(identifyexecutor(), "Xeno") or
-            string.find(identifyexecutor(), "Seline") or string.find(identifyexecutor(), "Atlantis") or
-            string.find(identifyexecutor(), "Zorara") or string.find(identifyexecutor(), "Luna") or
-            string.find(identifyexecutor(), "JJSploit")) then
+            string.find(agent, "Swift") or string.find(agent, "Xeno") or string.find(agent, "Seline") or
+            string.find(agent, "Atlantis") or string.find(agent, "Zorara") or string.find(agent, "Luna") or
+            string.find(agent, "JJSploit")) then
         return "Windows"
     else
         api.log(agent)
     end
 end
+
 
 
 local function main()
